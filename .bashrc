@@ -4,7 +4,7 @@ alias ....='cd ../../..;pwd'
 alias home='cd ~;pwd'
 
 function startvm(){
-	vboxmanage startvm "$1";
+	vboxmanage startvm "$1" --type headless;
 }
 
 function stopvm(){
