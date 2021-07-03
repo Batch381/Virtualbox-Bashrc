@@ -13,6 +13,7 @@ function stopvm(){
 
 function vmaddress(){
 	# Getting Mac Address.
+	# VM needs to be running! 
 	mac=$(vboxmanage showvminfo $1 | grep MAC);
 	mac=${mac:34:12};
 	#Fetching IP address from "LabNet" Network. 
@@ -24,5 +25,11 @@ function vmaddress(){
 	ip_addr=$(vboxmanage dhcpserver findlease --network=LabNet --mac-address=$mac | grep IP);
 	echo $mac_addr;
 	echo $ip_addr;
+}
+function showvms(){
+	vboxmanage list vms;
+}
+function showvmsrunning(){
+	vboxmanage list runningvms;
 }
 
