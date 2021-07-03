@@ -12,10 +12,10 @@ However, I want to be able to find out what IP it is on my NAT network called "L
 I have tried to make everything else as universal as I can.
 you can simply copy this code and add it into your ~/.bashrc file. 
 
-once you have added this. you can then use. 
+once you have added this. you can then use: 
 
-startvm name-of-vm
-stopvm name-of-vm
-vmaddress name-of-vm (only works while vm is running)
+* startvm name-of-vm      This starts the vm (headless)
+* stopvm name-of-vm       powers off the vm
+* vmaddress name-of-vm    Finds the MAC and IP address of the VM (on NAT Network "LabNet")
 
 soon to be adding more. 
