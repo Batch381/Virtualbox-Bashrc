@@ -17,8 +17,10 @@ you can simply copy this code and add it into your ~/.bashrc file.
 
 once you have added this. you can then use: 
 
-* startvm name-of-vm      This starts the vm (headless)
-* stopvm name-of-vm       powers off the vm
-* vmaddress name-of-vm    Finds the MAC and IP address of the VM (on NAT Network "LabNet")
+* startvm name-of-vm      This starts the vm. (headless)
+* stopvm name-of-vm       powers off the vm.
+* vmaddress name-of-vm    Finds the MAC and IP address of the VM. (on NAT Network "LabNet")
+* showvms                 This shows all vms you have installed.
+* showvmsrunning          This shows all the vms you currently have running. 
 
 soon to be adding more. 
