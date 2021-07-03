@@ -9,6 +9,13 @@ the VMs I am spinning up are from vulnhub. a simple machine with vulnerabilties 
 
 However, I want to be able to find out what IP it is on my NAT network called "LabNet" so if you are going to use my script. you'll need to either edit the code and change it to you NAT network name. or change the name of your NAT network to "LabNet"
 
-I have tried to make everything else as universal as I can. 
-
+I have tried to make everything else as universal as I can.
 you can simply copy this code and add it into your ~/.bashrc file. 
+
+once you have added this. you can then use. 
+
+startvm name-of-vm
+stopvm name-of-vm
+vmaddress name-of-vm (only works while vm is running)
+
+soon to be adding more. 
